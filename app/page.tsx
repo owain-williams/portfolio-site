@@ -74,17 +74,17 @@ export default function Home() {
           <strong>Vercel</strong>, I deploy and host applications ensuring
           optimal performance and user experience. The{" "}
           <strong>Serverless</strong> architecture means I can move at speed,
-          and with great flexibility when it comes to the <strong>CI/CD</strong>{" "}
-          pipeline. I use <strong>Shadcn UI</strong>, an innovative UI library,
-          to add an engaging visual interface to the applications I develop. I
-          am well versed in <strong>Clerk</strong>, a complete authentication
-          and user management solution, which helps me provide top-notch
-          authentication to the products I develop.
+          and with great flexibility when it comes to <strong>CI/CD</strong>. I
+          use <strong>Shadcn UI</strong>, an innovative UI library, to add an
+          engaging visual interface to the applications I develop. I am well
+          versed in <strong>Clerk</strong>, a complete authentication and user
+          management solution, which helps me provide top-notch authentication
+          to the products I develop.
         </p>
         <p className="leading-7 [&:not(:first-child)]:mt-6">
-          I am also well-versed in handling databases, being proficient in
+          I am also well-versed in handling databases, being proficient in{" "}
           <strong>Prisma</strong>, a next-generation ORM for{" "}
-          <strong>Node.js</strong> and <strong>TypeScript</strong>. With
+          <strong>Node.js</strong> and <strong>TypeScript</strong>. With{" "}
           <strong>MySQL</strong>/<strong>PlanetScale</strong> as my database
           technology of choice, I design data models that are efficient, secure,
           and scalable.
