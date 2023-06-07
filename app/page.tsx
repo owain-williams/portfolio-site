@@ -108,7 +108,7 @@ export default function Home() {
           dedicated technophile committed to using my knowledge and skills to
           create applications that make a difference. Whether it&apos;s a
           complex enterprise solution or a unique start-up idea, I&apos;m always
-          ready to take on challenges and transform your visions into reality.
+          ready to take on challenges and transform your visions into reality. 
         </p>
         <h2 className="scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0 pt-16">
           Portfolio
