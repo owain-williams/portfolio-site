@@ -1,4 +1,4 @@
-import Project from "../types/project";
+import { Badge } from "@/components/ui/badge";
 import {
   Card,
   CardContent,
@@ -7,16 +7,16 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import Image from "next/image";
-import Link from "next/link";
-import { Github, View } from "lucide-react";
 import {
   Tooltip,
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
-import { Badge } from "@/components/ui/badge";
+import { Github, View } from "lucide-react";
+import Image from "next/image";
+import Link from "next/link";
+import Project from "../types/project";
 
 export default function ProjectPreviewCard({ params }: { params: Project }) {
   return (

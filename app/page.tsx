@@ -1,12 +1,12 @@
-import Project from "../types/project";
 import ProjectPreviewCard from "@/components/project_preview_card";
+import Project from "../types/project";
 
 const projects: Project[] = [
   {
     id: 1,
     title: "Blog Site",
     description:
-      "This project was completed with no tutorial, and for the most part over two evenings. The goal was to create a blog site using Next.js and Tailwind CSS. The site is hosted on Vercel. The styling is purposefully basic, as is the functionality. The goal was to get a basic understanding of Next.js 13 Server Components and Server Actions.",
+      "This project was completed with no tutorial, and for the most part over two evenings. The styling is purposefully basic, as is the functionality. The goal was to get a basic understanding of Next.js 13 Server Components and Server Actions using only the documentation.",
     image: "/blog-site.png",
     liveUrl: "https://blog-site.owainwilliams.io",
     githubUrl: "https://github.com/owain-williams/blog-site2",
