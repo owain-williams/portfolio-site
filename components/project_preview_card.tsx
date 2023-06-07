@@ -27,7 +27,7 @@ export default function ProjectPreviewCard({ params }: { params: Project }) {
       </CardHeader>
       <CardContent className="relative">
         {/* Live site icon */}
-        <Link href={params.liveUrl}>
+        <Link href={params.liveUrl} className="py-1 px-1">
           <TooltipProvider>
             <Tooltip>
               <TooltipTrigger>
@@ -40,7 +40,7 @@ export default function ProjectPreviewCard({ params }: { params: Project }) {
           </TooltipProvider>
         </Link>
         {/* GitHub Icon */}
-        <Link href={params.githubUrl}>
+        <Link href={params.githubUrl} className="py-1 px-1">
           <TooltipProvider>
             <Tooltip>
               <TooltipTrigger>
