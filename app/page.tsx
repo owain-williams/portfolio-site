@@ -1,5 +1,6 @@
 import AboutMe from "@/components/about_me";
 import Portfolio from "@/components/portfolio";
+import Technologies from "@/components/technologies";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <div className="text-left">
         <AboutMe />
         <Portfolio />
+        <Technologies />
       </div>
     </main>
   );

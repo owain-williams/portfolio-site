@@ -46,7 +46,7 @@ const projects: Project[] = [
 export default function Portfolio() {
   return (
     <>
-      <div>
+      <div className="flex flex-col lg:columns-2">
         <h2 className="scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0 pt-16">
           Portfolio
         </h2>
