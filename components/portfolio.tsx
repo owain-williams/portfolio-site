@@ -49,11 +49,13 @@ export default function Portfolio() {
   return (
     <>
       <motion.div
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        transition={{ duration: 1 }}
-        animate={{
-          scale: [1.1, 1],
+        initial={{ opacity: 0, scale: 1.2 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{
+          duration: 1,
+          type: "spring",
+          stiffness: 260,
+          damping: 20,
         }}
       >
         <div className="flex flex-col lg:columns-2">
