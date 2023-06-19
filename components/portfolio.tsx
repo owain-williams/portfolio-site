@@ -1,5 +1,7 @@
+"use client";
 import Project from "../types/project";
 import ProjectPreviewCard from "./project_preview_card";
+import { motion } from "framer-motion";
 
 const projects: Project[] = [
   {
@@ -46,17 +48,26 @@ const projects: Project[] = [
 export default function Portfolio() {
   return (
     <>
-      <div className="flex flex-col lg:columns-2">
-        <h2 className="scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0 pt-16">
-          Portfolio
-        </h2>
-        {/* Once more projects are added, add lg:grid-cols-2 */}
-        <div className="grid grid-cols-1 py-4">
-          {projects.map((project) => (
-            <ProjectPreviewCard key={project.id} params={project} />
-          ))}
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 1 }}
+        animate={{
+          scale: [1.1, 1],
+        }}
+      >
+        <div className="flex flex-col lg:columns-2">
+          <h2 className="scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0 pt-16">
+            Portfolio
+          </h2>
+          {/* Once more projects are added, add lg:grid-cols-2 */}
+          <div className="grid grid-cols-1 py-4">
+            {projects.map((project) => (
+              <ProjectPreviewCard key={project.id} params={project} />
+            ))}
+          </div>
         </div>
-      </div>
+      </motion.div>
     </>
   );
 }

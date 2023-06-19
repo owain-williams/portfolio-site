@@ -1,3 +1,5 @@
+"use client";
+import { motion } from "framer-motion";
 const tech = [
   {
     header: "Programming Languages",
@@ -59,23 +61,29 @@ const tech = [
 export default function Technologies() {
   return (
     <>
-      <h2 className="scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0 pt-16">
-        Skills and Technologies
-      </h2>
-      <div className="grid md:grid-cols-2">
-        {tech.map((t) => (
-          <div key={t.header} className="py-2">
-            <h3 className="scroll-m-20 text-2xl font-semibold tracking-tight">
-              {t.header}
-            </h3>
-            <ul>
-              {t.list.map((l) => (
-                <li key={l}>{l}</li>
-              ))}
-            </ul>
-          </div>
-        ))}
-      </div>
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 1 }}
+      >
+        <h2 className="scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0 pt-16">
+          Skills and Technologies
+        </h2>
+        <div className="grid md:grid-cols-2">
+          {tech.map((t) => (
+            <div key={t.header} className="py-2">
+              <h3 className="scroll-m-20 text-2xl font-semibold tracking-tight">
+                {t.header}
+              </h3>
+              <ul>
+                {t.list.map((l) => (
+                  <li key={l}>{l}</li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+      </motion.div>
     </>
   );
 }
